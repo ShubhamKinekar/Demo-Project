@@ -30,7 +30,6 @@ export class TestComponent implements OnInit , OnChanges {
       alert("Thank You..!")
      }else(
       alert("Sorry..!")
-
      )
   }
 
