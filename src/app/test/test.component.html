@@ -1,0 +1,30 @@
+<br><br>
+<button class="button" routerLink="/test-link" (click)="testDone()"
+ routerLinkActive="activebutton">Test</button>
+<!-- <h3>{{myValue.name}} {{myValue.age}}</h3> -->
+  
+
+
+ <!-- <mat-slider min="1" max="100" step="1" value="50"></mat-slider> -->
+ <button [disabled]="name">submit Me</button>
+<br><br>
+
+<input type="text"  #box1 (keyup)="getValue(box1.value)"  placeholder="Enter the keyup" name="name" > <br>
+<br> <br>
+<input type="text"  #box2 (keydown)="getValue(box2.value)"  placeholder="Enter the keydown" name="name" > <br>
+<br><br>
+<input type="text"  #box3 (blur)="getValue(box3.value)"  placeholder="Enter the blur" name="name" > <br>
+<br><br>
+<!-- Display the input field value in console and text -->
+ <input type="text"  #box  placeholder="Enter the text" name="name" > <br><br>
+ <button (click)="getValue(box.value)">Show Data</button>
+ <h3 >Box Value is :{{displayName}}</h3>
+ <h2 (mouseover)="getValue('over')">Angular Mouse Over</h2>
+ <h2 (mouseleave)="getValue('leave')">Angular Mouse Leave</h2>
+ <br><br>
+
+ <!-- Counter Add -->
+ <button (click)="getCounter('minus')">--</button>
+ <br>
+ <h3>Add item: {{count}}</h3>
+ <button (click)="getCounter('add')">++</button>

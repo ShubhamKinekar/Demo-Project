@@ -1,0 +1,33 @@
+<h1>Welcome to {{title | uppercase  }} </h1>
+<h1>Welcome to {{title | slice:3: 6  }} </h1>
+<h1>Welcome to {{title | uppercase  }} </h1>
+<h1>Welcome to {{users | json | uppercase }} </h1>
+
+
+<!-- {{Date | date: 'dd-MM-yy hh:mm:a:s '}} -->
+{{Date | date:'fullDate'}}
+
+    <br> 
+
+  <table >
+   
+      <tr >
+        <th >Album Id</th>
+        <th >Id</th>
+        <th >Title</th>
+        <th >Url</th>
+        <th >Thumbnail Url</th>
+      </tr>
+  
+  
+      <tr *ngFor="let u of user">
+        <td >{{u.albumId}}</td>
+        <td>{{u.id}}</td>
+        <td>{{u.title | uppercase}}</td>
+        <td>{{u.url}}</td>
+        <td>{{u.thumbnailUrl}}</td>
+
+      </tr>
+   
+  </table>
+

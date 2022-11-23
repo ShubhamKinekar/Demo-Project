@@ -1,0 +1,21 @@
+<table border="2">
+   
+    <tr >
+      <th >Album Id</th>
+      <th >Id</th>
+      <th >Title</th>
+      <th >Url</th>
+      <th >Thumbnail Url</th>
+    </tr>
+
+  <tbody>
+    <tr *ngFor="let user of user">
+      <td>{{user.albumId}}</td>
+      <td>{{user.id}}</td>
+      <td>{{user.title | uppercase}}</td>
+      <td>{{user.url}}</td>
+      <td>{{user.thumbnailUrl}}</td>
+
+    </tr>
+ 
+</table>

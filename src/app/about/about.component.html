@@ -1,0 +1,34 @@
+<br> <br>
+<button (click)="showData()" routerLink="/demo-link">Show Data</button>
+<br> <br>
+
+
+<div *ngIf="displayName || displayValue">
+    Show Message
+</div>
+
+<!-- <div *ngIf="displayName; else displayValue">
+    show Data  
+</div>
+<ng-template #displayValue>Good Evening</ng-template> -->
+
+<div *ngIf="displayName; then badBlock; else displayValue">
+    show Value  
+</div>
+
+<ng-template #badBlock>Good Night</ng-template> 
+<ng-template #displayValue>Good Morning</ng-template>
+
+<button (click)="onClick()">Click Me</button>
+<div *ngIf="isValid; then noValid; else notValid" >Hello Guys</div>
+<ng-template #noValid>Good Luck</ng-template>
+<ng-template #notValid>Good Morning</ng-template>
+ 
+
+<h2 class={{title}}>{{title}}</h2>
+<h3 *ngFor="let Value of data">
+  Name is:  {{Value}}
+</h3>
+<h4 *ngFor="let Value of dataDetails">
+    Name is:  {{Value.name}} + {{Value.email}}+ {{Value.No}}
+</h4>

@@ -1,0 +1,9 @@
+h1{
+    color: red;
+}
+tr:nth-child(odd)   { background-color:#eee; }
+tr:nth-child(even)    { background-color:#fff; }
+
+table{
+    border-style: groove;
+}

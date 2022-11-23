@@ -1,0 +1,26 @@
+<h1>welcome to {{data}} </h1>
+<nav>
+  <button class="button"
+     routerLink="/"
+     routerLinkActive="activebutton"
+     >
+    Demo
+  </button> |
+  <button class="button"
+     routerLink="/test"
+     routerLinkActive="activebutton"
+     >
+    Test
+  </button> |
+  <button class="button"
+  routerLink="/about"
+  routerLinkActive="activebutton">About</button> |
+</nav>
+<br><br>
+
+<!-- <app-child (updateDataEvent)="updateData($event)"></app-child> -->
+<!-- <app-test [myValue]="value"></app-test> -->
+
+<!-- <app-demo></app-demo>
+<app-test></app-test> -->
+<router-outlet></router-outlet>
