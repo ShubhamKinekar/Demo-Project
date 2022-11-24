@@ -12,6 +12,7 @@ import { DemoLinkComponent } from './demo-link/demo-link.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatSliderModule } from '@angular/material/slider';
 import { ChildComponent } from './child/child.component';
+import { MultiplyComponent } from './multiply/multiply.component';
 
 
 @NgModule({
@@ -23,6 +24,7 @@ import { ChildComponent } from './child/child.component';
     TestLinkComponent,
     DemoLinkComponent,
     ChildComponent,
+    MultiplyComponent,
   ],
   imports: [
     BrowserModule,FormsModule,

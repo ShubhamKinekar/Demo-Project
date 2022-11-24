@@ -13,7 +13,6 @@ export class MultiplyComponent implements OnInit {
   ngOnInit(): void {
     const a= 10;
     console.log(a)
-
   }
     
 }
